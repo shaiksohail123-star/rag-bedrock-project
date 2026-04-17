@@ -1,20 +1,19 @@
-# 🚀 RAG-based Question Answering System (Amazon Bedrock)
+# 🚀 RAG-based Question Answering System using Amazon Bedrock
 
 ## 📌 Overview
 This project demonstrates a Retrieval-Augmented Generation (RAG) system using Amazon Bedrock.
 
-The system retrieves relevant information from stored documents and generates accurate answers using a foundation model.
+It allows users to ask questions on documents stored in S3 and receive accurate, context-based answers.
 
 ---
 
 ## 🧠 Architecture
 
-1. Documents stored in Amazon S3  
-2. Converted into embeddings using Titan Embedding Model  
-3. Stored in vector database  
-4. User query → semantic search  
-5. Relevant chunks retrieved  
-6. Response generated using Nova Micro model  
+User Query  
+↓  
+Retrieve relevant documents (Vector Search)  
+↓  
+Generate answer using LLM  
 
 ---
 
@@ -24,8 +23,7 @@ The system retrieves relevant information from stored documents and generates ac
 - Amazon S3  
 - Titan Embeddings  
 - Nova Micro Model  
-- Vector Store  
-- RAG Architecture  
+- OpenSearch Vector Store  
 
 ---
 
@@ -37,33 +35,44 @@ The system retrieves relevant information from stored documents and generates ac
 
 ---
 
+## 🔄 Workflow
+
+1. Upload documents to S3  
+2. Create Knowledge Base in Bedrock  
+3. Convert documents into embeddings  
+4. Store in vector database  
+5. Retrieve relevant data  
+6. Generate answer using LLM  
+
+---
+
 ## 🧪 Output
 
-The system answers questions like:
+Example:
 
-👉 "How many leaves are allowed?"
+**Question:** How many leaves are allowed?  
+**Answer:** Employees are entitled to 20 paid leaves annually.
 
-✔ Returns accurate answers  
-✔ Uses document context  
-✔ Provides citations  
+✔ Answer based on documents  
+✔ Includes citations  
 
 ---
 
 ## 📸 Screenshots
-<img width="1920" height="895" alt="rag-kb-project" src="https://github.com/user-attachments/assets/e48573e4-a618-4425-91fe-b6a386101ebb" />
-<img width="1918" height="886" alt="Test Knowledge Base rag-kb-project" src="https://github.com/user-attachments/assets/a8e10068-ce66-4c34-b0e8-385da1115488" />
-<img width="1919" height="889" alt="Knowledge Bases" src="https://github.com/user-attachments/assets/977c7310-b164-4ce5-995c-1755aff78146" />
 
+## <img width="1920" height="895" alt="rag-kb-project" src="https://github.com/user-attachments/assets/2d1076e5-752b-4fac-8d8c-b3688e6bcc82" />
+## <img width="1920" height="895" alt="rag-kb-project" src="https://github.com/user-attachments/assets/040038e7-ab27-4132-8c09-1d8186d69497" />
+## <img width="1918" height="886" alt="Test Knowledge Base rag-kb-project" src="https://github.com/user-attachments/assets/afa40469-c68e-4f95-80f5-8a158726411e" />
 
 
 ---
 
 ## 🚀 Result
 
-Successfully implemented an end-to-end RAG pipeline using AWS Bedrock.
+Successfully built a working RAG system using Amazon Bedrock.
 
 ---
 
-## 🔗 Author
+## 👤 Author
 
 Sohail
