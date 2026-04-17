@@ -27,7 +27,8 @@ Sample documents:
 The system retrieves relevant data and generates accurate responses with citations.
 
 ## 📸 Screenshots
-(Add your screenshots here)
+<img width="1920" height="895" alt="rag-kb-project" src="https://github.com/user-attachments/assets/5d70c8b7-d611-4636-8548-f74b8dafb808" />
+
 
 ## 🚀 Result
 Successfully built a working RAG pipeline using AWS Bedrock.
