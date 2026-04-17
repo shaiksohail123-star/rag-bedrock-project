@@ -1,0 +1,2 @@
+System uses authentication via username and password.
+Users must reset password every 90 days.
