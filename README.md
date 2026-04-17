@@ -2,6 +2,7 @@
 
 ## 📌 Overview
 This project demonstrates a Retrieval-Augmented Generation (RAG) system using Amazon Bedrock.
+**This project reduces hallucination by grounding LLM responses in enterprise data using RAG.**
 
 It allows users to ask questions on documents stored in S3 and receive accurate, context-based answers.
 
@@ -11,9 +12,11 @@ It allows users to ask questions on documents stored in S3 and receive accurate,
 
 User Query  
 ↓  
+Amazon Bedrock Knowledge Base  
+↓  
 Retrieve relevant documents (Vector Search)  
 ↓  
-Generate answer using LLM  
+Generate answer using Nova Micro Model  
 
 ---
 
@@ -38,11 +41,11 @@ Generate answer using LLM
 ## 🔄 Workflow
 
 1. Upload documents to S3  
-2. Create Knowledge Base in Bedrock  
-3. Convert documents into embeddings  
+2. Create Knowledge Base  
+3. Convert text into embeddings  
 4. Store in vector database  
 5. Retrieve relevant data  
-6. Generate answer using LLM  
+6. Generate response using LLM  
 
 ---
 
